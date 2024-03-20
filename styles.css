@@ -4,3 +4,103 @@
     padding: 0;
     font-family: 'Kumbh sans'
 }
+
+.navbar {
+    background: #fff;
+    background-image: linear-gradient(to top, #affc41 50%, #fff 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;d8212b
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background-color: #006400;
+    background-image: linear-gradient(to top, #006400 0%, #006400 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+.fa-gem {
+    margin-right:  0.5rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #006400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #006400;
+    color: #fff;
+}
+
+
+.button:hover {
+    background: #00008B;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #00008B;
+    transition: all 0.3s ease;
+    transform: scale(1.2)
+}
