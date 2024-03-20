@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;d8212b
+    font-size: 1.2rem; 
     position: sticky;
     top: 0;
     z-index: 999;
@@ -103,4 +103,28 @@
     color: #00008B;
     transition: all 0.3s ease;
     transform: scale(1.2)
+}
+
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar__menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        
+
+    }
+
+
 }
