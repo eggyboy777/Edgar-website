@@ -34,8 +34,7 @@
     background-color: #006400;
     background-image: linear-gradient(to top, #006400 0%, #006400 100%);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
@@ -191,14 +190,14 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
+        display: none;
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg)
+        transform: translateY(0px) rotate(45deg)
     }
 
-    #mobile-menu.is-active .bar:nth-child(1) {
+    #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg)
     }
 }
