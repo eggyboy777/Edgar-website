@@ -201,3 +201,33 @@
         transform: translateY(-8px) rotate(-45deg)
     }
 }
+
+/*body {
+    background-image: url('xp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* Hero Sction CSS */
+  .main {
+    background-color: #ccff33;
+  }
+
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: none;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+
+  .p1 {
+    font-family: "Optima", sans-serif;
+  }
