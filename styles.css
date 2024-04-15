@@ -7,7 +7,7 @@
 
 .navbar {
     background: #fff;
-    background-image: linear-gradient(to top, #affc41 50%, #fff 100%);
+    background-image: linear-gradient(to top, #32CD32 50%, #36454F 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -150,7 +150,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #affc41;
     }
 
     .navbar__item {
@@ -211,7 +211,7 @@
 
   /* Hero Sction CSS */
   .main {
-    background-color: #ccff33;
+    background-color: #36454F;
   }
 
   .main__container {
@@ -226,8 +226,70 @@
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
+    color: #32CD32;
   }
 
   .p1 {
     font-family: "Optima", sans-serif;
+    color: #affc41;
   }
+
+  .main__img_container{
+    padding: 10rem;
+  }
+
+.wrapper{
+    background-color: #36454F;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.wrapper:before, .wrapper:after {
+    content: "";
+    position: absolute;
+    height: 130px;
+    width: 150px;
+    z-index: 2;
+}
+
+.wrapper:after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.wrapper:before {
+    left: 0;
+    top: 0;
+
+}
+
+.wrapper {
+    display: flex;
+    width: calc(500px * 100);
+    animation: scroll 20s 10s linear infinite;
+}
+
+.wrapper .logo{
+    width: 500px;
+}
+
+.wrapper .logo img {
+    height: 200px;
+    width: 500px;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-150px * 5));
+    }
+}
