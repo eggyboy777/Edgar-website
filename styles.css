@@ -202,8 +202,8 @@
     }
 }
 
-/*body {
-    background-image: url('xp.jpg');
+  .body {
+    background-color: #36454F;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -212,6 +212,8 @@
   /* Hero Sction CSS */
   .main {
     background-color: #36454F;
+    width: 100%;
+    align-items:center;
   }
 
   .main__container {
@@ -240,12 +242,14 @@
 
 .wrapper{
     background-color: #36454F;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
-    position: relative;
+    position:absolute;
+    top: 80px;
+    left: 0px;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
     padding: 0 20px;
 }
 
@@ -254,7 +258,7 @@
     position: absolute;
     height: 130px;
     width: 150px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .wrapper:after {
@@ -271,8 +275,8 @@
 
 .wrapper {
     display: flex;
-    width: calc(500px * 100);
-    animation: scroll 20s 10s linear infinite;
+    width: calc(10 * 100);
+    animation: scroll 30s 3s linear infinite;
 }
 
 .wrapper .logo{
@@ -280,7 +284,7 @@
 }
 
 .wrapper .logo img {
-    height: 200px;
+    height: 300px;
     width: 500px;
 }
 
@@ -290,6 +294,6 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(calc(-150px * 5));
+        transform: translateX(calc(-600px * 5));
     }
 }
