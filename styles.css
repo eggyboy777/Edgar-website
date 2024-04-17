@@ -202,12 +202,7 @@
     }
 }
 
-  .body {
-    background-color: #36454F;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+  
 
   /* Hero Sction CSS */
   .main {
@@ -244,18 +239,19 @@
     background-color: #36454F;
     height: 300px;
     overflow: hidden;
-    position:absolute;
+    position:fixed;
     top: 80px;
     left: 0px;
     width: 100%;
     display: flex;
     align-items: top;
     padding: 0 20px;
+    width: auto;
 }
 
 .wrapper:before, .wrapper:after {
     content: "";
-    position: absolute;
+    position: flex;
     height: 130px;
     width: 150px;
     z-index: 5;
@@ -275,8 +271,8 @@
 
 .wrapper {
     display: flex;
-    width: calc(10 * 100);
-    animation: scroll 30s 3s linear infinite;
+    width: calc(50px * 100);
+    animation: scroll 50s 3s linear infinite;
 }
 
 .wrapper .logo{
@@ -294,6 +290,17 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(calc(-600px * 5));
+        transform: translateX(calc(-1000px * 5));
     }
 }
+
+.body {
+    background-color: #36454F;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .image_lol {
+    background-image: url(MicrosoftTeams-image (2).png);
+  }
