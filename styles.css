@@ -31,8 +31,8 @@
 }
 
 #navbar__logo {
-    background-color: #006400;
-    background-image: linear-gradient(to top, #006400 0%, #006400 100%);
+    background-color: #36454F;
+    background-image: linear-gradient(to top, #36454F 0%, #36454F 100%);
     background-size: 100%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -61,7 +61,7 @@
 }
 
 .navbar__links {
-    color: #006400;
+    color: #36454F;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,7 +236,7 @@
   }
 
 .wrapper{
-    background-color: #36454F;
+    background-color: #32CD32;
     height: 300px;
     overflow: hidden;
     position:fixed;
@@ -272,25 +272,31 @@
 .wrapper {
     display: flex;
     width: calc(50px * 100);
-    animation: scroll 50s 3s linear infinite;
+    animation: scroll 20s 3s linear infinite;
 }
 
 .wrapper .logo{
-    width: 500px;
+    width: auto;
 }
 
 .wrapper .logo img {
     height: 300px;
     width: 500px;
+    padding: 5px;
 }
 
+.wrapper .logo img :hover {
+    cursor: pointer;
+
+}
+.logo {
+    cursor: pointer;
+}
+    
 
 @keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
     to {
-        transform: translateX(calc(-1000px * 5));
+        transform: translateX(-50%);
     }
 }
 
