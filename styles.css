@@ -5,9 +5,10 @@
     font-family: 'Kumbh sans'
 }
 
+
 .navbar {
     background: #fff;
-    background-image: linear-gradient(to top, #32CD32 50%, #36454F 100%);
+    background-image: linear-gradient(to top, #32CD32 50%, #affc41 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -233,28 +234,32 @@
 
   .main__img_container{
     padding: 10rem;
+    width: auto;
   }
 
 .wrapper{
-    background-color: #32CD32;
-    height: 300px;
+    
+    height: 6000px;
     overflow: hidden;
     position:fixed;
     top: 80px;
     left: 0px;
-    width: 100%;
+    width: 10000px;
     display: flex;
     align-items: top;
-    padding: 0 20px;
-    width: auto;
+    border:#32CD32;
+    border-style: solid;
+    border-width:thick;
+    width: 10000px;
+    z-index: 0;
 }
 
 .wrapper:before, .wrapper:after {
     content: "";
     position: flex;
     height: 130px;
-    width: 150px;
-    z-index: 5;
+    width: 1300px;
+    z-index: 0;
 }
 
 .wrapper:after {
@@ -271,22 +276,22 @@
 
 .wrapper {
     display: flex;
-    width: calc(50px * 100);
+    width: calc(60px * 100);
     animation: scroll 20s 3s linear infinite;
 }
 
 .wrapper .logo{
-    width: auto;
+    width: 10000px;
 }
 
 .wrapper .logo img {
-    height: 300px;
-    width: 500px;
-    padding: 5px;
+    height: 900px;
+    width: 1000px;
 }
 
 .wrapper .logo img :hover {
     cursor: pointer;
+
 
 }
 .logo {
@@ -296,7 +301,7 @@
 
 @keyframes scroll {
     to {
-        transform: translateX(-50%);
+        transform: translateX(-80%);
     }
 }
 
@@ -305,8 +310,37 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
   }
 
-  .image_lol {
-    background-image: url(MicrosoftTeams-image (2).png);
+  .title{
+    align-items: center;
+    font-size: 5rem;
+    display: flex;
+    color: #32CD32;
+    position:absolute;
+    left: 250px;
+    top: 400px;
+    background-clip: text;
+    background-image:  linear-gradient(to top, #32CD32 -50%, #affc41 100%);
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+  }
+
+
+
+  .dancing-script-title {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .sigma {
+    font-size: 1rem ;
+    background-color: #36454F;
+    align-items: center;
+    position:absolute;
+    text-align: center;
+    padding-top: 200px;
   }
