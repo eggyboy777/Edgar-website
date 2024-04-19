@@ -301,7 +301,7 @@
 
 @keyframes scroll {
     to {
-        transform: translateX(-80%);
+        transform: translateX(-50%);
     }
 }
 
@@ -313,7 +313,7 @@
 
   }
 
-  .title{
+.title-bg {
     align-items: center;
     font-size: 5rem;
     display: flex;
@@ -327,7 +327,9 @@
     z-index: 1;
   }
 
-
+.title-box {
+    background-color: #00008B;
+}
 
   .dancing-script-title {
     font-family: "Dancing Script", cursive;
